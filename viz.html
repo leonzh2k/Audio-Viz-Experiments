@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js" defer></script>
+    <script src="./libs/p5.sound.js" defer></script>
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            background-color: black;
+        }
+        #centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+        #canvas {
+            border: 2px rgb(41, 38, 38) solid;
+        }
+        #control-panel {
+            /* border: 2px red solid; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #control-panel div {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="centered">
+        <div id="canvas"></div>
+        <div id="control-panel">
+            <div>
+                <span>treble color</span>
+                <input id="treble-color" type="color">
+            </div>
+            <div>
+                <span>bass color  </span>
+                <input id="bass-color" type="color">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
